@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
+    <!-- Link da fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Link dos estilos -->
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/main.css">
 </head>
 <body>
     <main>
-        <h1>Lista de Tarefas</h1>
-        <input type="text" id="tarefas" placeholder="Adicionar nova tarefa">
-        <button>Adicionar</button>
-        <ul id="lista-de-tarefas"></ul>
+        <div id="to-do-list">
+            <h1>Lista de Tarefas</h1>
+            <div class="input-tarefas">
+                <input type="text" id="tarefas" placeholder="Adicionar nova tarefa">
+                <button id="addTarefa">Adicionar</button>
+                <ul id="lista-de-tarefas"></ul>
+            </div>
+        </div>
     </main>
+<script src="src/script/main.js" defer></script>
 </body>
 </html>
